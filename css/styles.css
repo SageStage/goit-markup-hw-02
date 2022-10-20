@@ -1,0 +1,337 @@
+:root {
+    --blue-color: #2196f3;
+    --blue-color-hover-button: #188CE8;
+    --black-color: #000000;
+    --black-gray-color: #212121;
+    --light-gray-color: #757575;
+    --h1-color: #fff;
+    --section-bacground-color: #f5f5f5;
+    --footer-and-hero-bacground-color: #2F303A;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*Стили для секции header*/
+/*Определяем фон секции header*/
+header {
+    background-color: var(--h1-color);
+}
+/*Навигация и контакты  секции header отображаются в линию*/
+.header-nav > li,
+.header-contact >li{
+    display: inline-block;
+}
+
+/*Часть лого web принимает голубой цвет */
+.web {
+    color: var(--blue-color);
+}
+/*Часть лого studio принимает черный цвет */
+.studio {
+    color: var(--black-color);
+}
+/*определение шрифта и размера для начертания лого в header&footer */
+.web,
+.studio,
+.studio-footer {
+    font-family: "Raleway", sans-serif;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.91;
+    letter-spacing: 0.03em;
+}
+/*убираем подчеркивание тега <a> в лого в header&footer */
+.none-underline {
+    text-decoration: none;
+}
+/*отрисовка меню навигации*/
+.header-nav-point {
+    text-decoration: none;
+    color: var(--black-gray-color) font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+/*отрисовка ссылок*/
+.header-contact-point {
+   text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--light-gray-color); 
+}
+/*переопредеоение цвета меню и ссылок при ховере\фокусе */
+.header-nav-point:hover,
+.header-nav-point:focus,
+.header-contact-point:hover,
+.header-contact-point:focus
+{
+color: var(--blue-color);
+}
+
+/*Стили для секции main*/
+/*определение цвета фона  для секции герой*/
+.hero {
+    background-color: var(--footer-and-hero-bacground-color);
+}
+/*определение шрифта заголовка первого уровня для секции герой*/
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--h1-color);
+
+}
+/*отрисовка кнопки для секции герой*/
+.hero-button {
+    /*position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;*/
+
+
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--h1-color);
+    background: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+}
+/*переопределение цвета кнопки при ховере\фокусе в секции герой*/
+.hero-button:hover,
+.hero-button:focus {
+    background: var(--blue-color-hover-button);
+
+}
+
+/*определение цвета фона в секции Особливості*/
+.feature {
+    background-color: var(--section-bacground-color);
+}
+/*определение заголовка секции Особливості. Потом надо сделать невидимым*/
+.feature-h2 {
+    text-decoration: line-through;
+}
+/*формирование карточек в секции Особливості. Отображение в линию. Потом добавить маржин\падинг\позицию*/
+.feature-card {
+    display: inline-block;
+    width: 270px;
+   
+}
+/*определение заголовка карточек в секции Особливості. */
+.feature-h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--black-gray-color);
+}
+/*определение параграфа карточек в секции Особливості. */
+.feature-p {
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--light-gray-color);
+}
+/*определение стилей секции Чим ми займаємося */
+/*определение цвета фона секции Чим ми займаємося */
+.activity {
+    background-color: var(--section-bacground-color);
+}
+/*отображение в линию изображений секции Чим ми займаємося. Потом добавить маржин\падинг\позици*/
+.activity li {
+    display: inline-block;
+}
+/*определение стилея заголовка секции Чим ми займаємося */
+.activity-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-gray-color);
+}
+/*определение стилей секции Наша команда */
+
+/*Задание цвета фона секции Наша команда */
+.teams {
+    background-color: #F5F4FA;
+}
+/*формирование карточек в секции Наша команда. Отображение в линию. Потом добавить маржин\падинг\позицию*/
+.teams-card {
+    display: inline-block;
+    width: 270px;
+    height: 368px;
+    background-color: var(--h1-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+/*определение заголовка секции Наша команда */
+.teams-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--black-gray-color);
+}
+/*определение заголовка карточки секции Наша команда */
+.teams-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    /* identical to box height */
+
+
+    letter-spacing: 0.03em;
+
+    color: var(--black-gray-color);
+}
+/*определение параграфа карточки секции Наша команда */
+.teams-p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    /* identical to box height */
+
+
+    letter-spacing: 0.03em;
+
+    color: var(--light-gray-color);
+}
+/*определение стилей футера */
+footer {
+    background-color: var(--footer-and-hero-bacground-color);
+}
+/*определение стилей для адреса -город\улица*/
+.city {
+    text-decoration: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--h1-color);
+}
+/*определение стилей для адреса - контакты*/
+.footer-point {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+/*Часть лого web принимает белый цвет */
+.studio-footer {
+    color: var(--h1-color);
+}
+
+/*задание стилей для страницы портфолио */
+/*Стилизация секции main portfolio.html*/
+
+/*задаем положение кнопок фильтра работ в линию */
+.filter > li {
+    display: inline-block;
+}
+/*определям внешний вид кнопок фильтра работ */
+.filter-button{
+    background: #F5F4FA;
+        border-radius: 4px;
+        border-color: #F5F4FA;
+}
+/*переопределяем цвет кнопок фильтра работ при ховере\фокусе\active*/
+.filter-button:hover,
+.filter-button:active,
+.filter-button:focus {
+    background: var(--blue-color);
+        /* shadow-middle */
+    
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        border-color: var(--blue-color);
+}
+/*Формируем список примеров работ и определяем стили карточек*/
+.portfolio-list {
+    display: block;
+    text-decoration: none;
+}
+.portfolio-list-card{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    box-sizing: border-box;
+}
+/*Убираем подчеркивание тега <а> */
+.portfolio-list-card-item {
+    text-decoration: none;
+}
+/*Задаем стиль заголовка карточки проекта*/
+.portfolio-list-card-item> h3 {
+   
+        
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        /* identical to box height, or 200% */
+    
+        letter-spacing: 0.06em;
+    
+        color: #212121;
+}
+/*Задаем стиль забзаца карточки проекта*/
+.portfolio-list-card-item> p {
+  
+    
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        /* identical to box height, or 188% */
+    
+        letter-spacing: 0.03em;
+    
+        color: #757575;
+}
+
