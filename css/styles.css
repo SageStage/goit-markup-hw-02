@@ -169,7 +169,7 @@ h1 {
 /*определение параграфа карточек в секции Особливості. */
 .feature-p {
 
-    
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -267,10 +267,11 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+
 .city:hover,
 .city:focus,
 .footer-point:hover,
-.footer-point:focus{
+.footer-point:focus {
     color: var(--blue-color);
 }
 
