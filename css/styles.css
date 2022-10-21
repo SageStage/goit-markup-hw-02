@@ -18,6 +18,18 @@ body {
 ul {
     list-style-type: none;
 }
+.visually-hidden {
+ position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /*Стили для секции header*/
 
@@ -57,6 +69,15 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+.header-nav-active {
+   text-decoration: none;
+    color: var(--blue-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
 }
 
 /*отрисовка ссылок*/
@@ -143,9 +164,7 @@ ul {
 
 /*определение заголовка секции Особливості. Потом надо сделать невидимым*/
 .feature-h2 {
-
-    display: none;
-    visibility: hidden;
+/*.visually-hidden */
 }
 
 /*определение заголовка карточек в секции Особливості. */
@@ -187,14 +206,13 @@ ul {
 
 /*определение заголовка секции Наша команда ... переопределено в style-h2
 .teams-h2 {
-   /* font-weight: 700;*/
+   
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--black-gray-color);
 }
-
 */
 
 /*определение заголовка карточки секции Наша команда */
@@ -259,8 +277,9 @@ footer {
 
 /*Заголовок секции сделать позже невидимым. */
 .portfolio-h1 {
-    text-decoration: line-through;
-    visibility: hidden;
+   
+    /*visibility: hidden;*/
+ /*used class .visually-hidden */
 
 }
 
